@@ -1,29 +1,59 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
-	<style>
-		 
-		#tiger {
-			height:2000;
-			width:2000;
-			background-color:red;
+    <title>Arik's Projects</title>
+    <style>
+        #reds{
+			width: 425px;
+			height: 367px;
+			background-image: url('./images/fox.jpg');
+			background-repeat: no-repeat;
+			background-color:green;
 		}
-		div:hover {
-			background-image:url('https://www.thesun.co.uk/wp-content/uploads/2019/08/AD-SPORT-GRAPHIC-Tiger-Woods-Injuries-NEW-2-1.jpg?strip=all&w=720&quality=100');
-		}
+
+#text1{
+	text-decoration: none;
+	width:20%;
+	height:20%;
+	position:relative;
+	top:20%;
+	left:30%;
+	background-color:white;
+	border:solid;
+	opacity:0;
+	transition:2s;
+}
 
 	</style>
-
 </head>
-<body>
-	<div id='tiger'>
-		<img src="https://peopledotcom.files.wordpress.com/2018/09/tiger-woods-a.jpg?w=1334&h=2000" 
-onmouseover="this.src='https://www.thesun.co.uk/wp-content/uploads/2019/08/AD-SPORT-GRAPHIC-Tiger-Woods-Injuries-NEW-2-1.jpg?strip=all&w=720&quality=100'"
-onmouseout="this.src='https://peopledotcom.files.wordpress.com/2018/09/tiger-woods-a.jpg?w=1334&h=2000'"
-border="0" alt=""/>
-		
-	</div>
 
+<body>
+    <a href="https://www.nytimes.com/">
+        <div id='reds'>
+            <div id="text1">
+                <p>hello arik, how was your day?</p>
+            </div>
+        </div>
+    </a>
+    <div id='blues'></div>
+    <div id='yellows'></div>
+    <script type="text/javascript">
+    var fox = document.getElementById("reds");
+    var text1 = document.getElementById('text1');
+
+    fox.addEventListener("mouseenter", function() {
+            text1.style.opacity = "1";
+        }
+
+    )
+
+    fox.addEventListener("mouseout", function() {
+            text1.style.opacity = "0";
+        }
+
+    )
+    </script>
 </body>
+
 </html>
