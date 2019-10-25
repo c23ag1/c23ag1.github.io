@@ -4,40 +4,111 @@
 <head>
     <title>Arik's Projects</title>
     <style>
-        #reds{
-			width: 425px;
-			height: 367px;
-			background-image: url('./images/fox.jpg');
-			background-repeat: no-repeat;
-			background-color:green;
-		}
+#header{
+font-size:78px;
+color:green;}
 
-#text1{
-	text-decoration: none;
-	width:20%;
-	height:20%;
-	position:relative;
-	top:20%;
-	left:30%;
-	background-color:white;
-	border:solid;
-	opacity:0;
-	transition:2s;
+
+#fox{
+width: 425px;
+height: 367px;
+background-image: url('./images/fox.png');
+left:0%;       
 }
 
-	</style>
+#text1{
+text-decoration: none;
+width:20%;
+height:20%;
+position:relative;
+top:20%;
+left:30%;
+background-color:white;
+border:solid;
+opacity:0;
+transition:2s;
+}
+
+#panda{
+left:35%;
+width: 325px;
+height: 367px;
+background-image: url('./images/panda.png');
+        
+    }
+#text2{
+    text-decoration: none;
+    width:20%;
+    height:20%;
+    position:relative;
+    top:20%;
+    left:30%;
+    background-color:white;
+    border:solid;
+    opacity:0;
+    transition:2s;
+}
+
+#snowman{
+    
+left:60%;
+width: 525px;
+height: 367px;
+background-image: url('./images/snowman.png');
+
+   
+}
+
+#container{
+background-color:blue;
+width:100%;
+}
+
+.links{
+    position:absolute;
+   background-size:contain;
+   background-repeat: no-repeat;
+   display:inline-block;
+}
+    </style>
+
 </head>
 
 <body>
-    <a href="https://www.nytimes.com/">
-        <div id='reds'>
-            <div id="text1">
-                <p>hello arik, how was your day?</p>
+    <h1 id='header'>ARIK'S PERSONAL WEBSITE!!!</h1>
+    <div id="container">
+
+
+        <a href="journal.html">
+            <div class="links" id='fox'>
+                <div id="text1">
+                    <p>Coding Journal</p>
+                </div>
             </div>
-        </div>
-    </a>
-    <div id='blues'></div>
-    <div id='yellows'></div>
+        </a>
+
+
+        <a href="room.html">
+        <div class="links" id='panda'></div>
+
+
+
+
+
+        <div class="links" id='snowman'></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <script type="text/javascript">
     var fox = document.getElementById("reds");
     var text1 = document.getElementById('text1');
@@ -50,6 +121,7 @@
 
     fox.addEventListener("mouseout", function() {
             text1.style.opacity = "0";
+            console.log("Happy birthday arik!")
         }
 
     )
