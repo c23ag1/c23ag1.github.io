@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        #plate{
+			width:800px;
+			height:600px;
+			background-image:url(https://cdn11.bigcommerce.com/s-zebznqh0/images/stencil/600x600/products/2075/2339/1128080000110229__25306.1456307243.jpg?c=2);
+			background-size:center;
+			background-image:cover;
+			background-repeat: no-repeat;
+			font-size:100px;
+			color:lightblue;
+		}
+		input{
+			width:400px;
+			height:200px;
+			font-size:40px;
+		}
+		#food{
+			width:300px;
+			height:300px;
+/*			background-color:green;
+*/			position:relative;
+			top:25%;
+			left:20%;
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>School Generator</h1>
+    <div id="plate">
+        <div id="food"></div>
+    </div>
+    <script type="text/javascript">
+    var generator = [
+        "url(https://leadingschools.com/administration/uploads/schoolpages/1512118531_Logo.png)", "url(https://pbs.twimg.com/profile_images/1171779541783732224/a_02mn7n_400x400.jpg)", "url(https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Horace_Mann_School_seal.jpg/250px-Horace_Mann_School_seal.jpg)","url(http://poetryuponrequest.com/wp-content/uploads/2018/10/riverdale-1.png)","url(https://upload.wikimedia.org/wikipedia/en/2/24/Collegiate_School_logo.png)"
+    ]
+var food = document.getElementById("food");
+    var plate = document.getElementById("plate");
+    plate.addEventListener("click", function() {
+        food.style.backgroundImage = generator[Math.floor(Math.random() * 5)]
+    });
+    // var eggDictionary = {
+    // 	scrambled: "url(https://skintchef.co.uk/wp-content/uploads/2019/07/soft-and-fluffy-scrambled-eggs.jpg)"
+    // }
+    </script>
+
+
+    <!-- 	1. put dates in your google doc: meeting with kindergartners on 1/7 but presentable draft of project should be done by December 6 for first draft festival. Write down
+ -->
+</body>
+
+</html>
