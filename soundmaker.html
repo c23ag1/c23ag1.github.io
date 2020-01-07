@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+    	#container{
+    		left: 0%;
+    		background-image:url("wave.gif");
+    	}
+    	
+    	
+    </style>
+
+</head>
+
+<body>
+	<div id="container">
+    <div class="instrument" id="ugh"><img src="bass3.jpg"></div>
+    <div class="instrument" id="snare"><img src="snare.jpg"></div>
+    <div class="instrument" id="earthquake"><img src="earth.jpg"></div>
+</div>
+    <div id="wave"></div>
+    <audio src="bass2.m4a" id="bass" ></audio>
+    <audio src="bass3.mp3" id="bass3" ></audio>
+    <audio src="snare.mp3" id="snares" ></audio>
+
+    <script>
+    var x = document.getElementById("bass");
+    var earthquake = document.getElementById("earthquake");
+    earthquake.addEventListener("click", function() {
+        x.play();
+        console.log("hi arik");
+    });
+    var y = document.getElementById("bass3");
+    var ugh = document.getElementById("ugh");
+    ugh.addEventListener("click", function() {
+        y.play();
+        console.log("hi arik");
+       });
+     var z = document.getElementById("snares");
+    var snare = document.getElementById("snare");
+    snare.addEventListener("click", function() {
+        z.play();
+        console.log("hi arik");
+       });
+    </script>
+</body>
+
+</html>
